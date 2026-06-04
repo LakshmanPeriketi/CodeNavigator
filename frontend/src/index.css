@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-border: #30363d;
+  --color-accent: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-text: #e6edf3;
+  --color-text-muted: #8b949e;
+  --color-code: #1e2432;
+  --color-success: #238636;
+  --color-error: #da3633;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(124, 58, 237, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(13, 17, 23, 0.98), rgba(13, 17, 23, 1));
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(22, 27, 34, 0.7);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(139, 148, 158, 0.28);
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 148, 158, 0.42);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
